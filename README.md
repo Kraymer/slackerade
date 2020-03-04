@@ -1,4 +1,5 @@
 # slackerade
+
 Masquerade yourself as fictitious user on slack
 
 ## Usage
