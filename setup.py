@@ -11,7 +11,7 @@ from setuptools import setup
 VERSION = '0.0.2-dev'
 DIRPATH = os.path.dirname(__file__)
 
-setup(name='memedict',
+setup(name='slackerade',
     version=VERSION if not VERSION.endswith('dev') else '%s%s' % (VERSION, int(time.time())),
     description='Masquerade yourself as a fictitious user on slack',
     long_description=open(os.path.join(DIRPATH, 'README.rst')).read(),
