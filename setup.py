@@ -39,6 +39,6 @@ setup(name=PKG_NAME,
         'Programming Language :: Python',
         'Topic :: Communications :: Chat',
     ],
-    keywords='Masquerade yourself as a fictitious user on slack',
+    keywords="slack",
     python_requires='>=3.5.0',
     )
