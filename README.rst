@@ -13,6 +13,13 @@ Usage
     
 Note: to have access to the channel *Webhook Url* you must first activate slack *Incoming Webhook* feature as explained `here <https://api.slack.com/messaging/webhooks#posting_with_webhooks>`_.
 
+Install
+-------
+
+::
+
+    pip3 install slackerade
+
 Example
 -------
 
