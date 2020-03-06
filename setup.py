@@ -11,6 +11,8 @@ from setuptools import setup
 VERSION = '0.0.2-dev'
 DIRPATH = os.path.dirname(__file__)
 
+# Deploy with
+# python3 setup.py sdist bdist_wheel; twine upload --verbose dist/*
 setup(name='slackerade',
     version=VERSION if not VERSION.endswith('dev') else '%s%s' % (VERSION, int(time.time())),
     description='Masquerade yourself as a fictitious user on slack',
