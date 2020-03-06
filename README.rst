@@ -29,3 +29,7 @@ gives :
 
 .. figure:: https://github.com/Kraymer/public/raw/master/slackerade/slackerade_demo.png
    :alt:
+
+
+
+Notify the `APP` tag next to the username so it can be distinguished from a real user.
