@@ -23,7 +23,7 @@ Install
 Example
 -------
 
-``./slackerade.py https://hooks.slack.com/services/<censured> "The Joker"  "That's the joke" ":thats_the_joke:"``
+``slackerade https://hooks.slack.com/services/<censured> "The Joker"  "That's the joke" ":thats_the_joke:"``
 
 gives :
 
