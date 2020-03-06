@@ -1,1 +1,3 @@
-include LICENSE README.rst VERSION
+include LICENSE
+include README.rst
+include slackerade/VERSION

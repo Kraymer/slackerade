@@ -7,12 +7,13 @@ import os
 import time
 from setuptools import setup
 
+PKG_NAME = "slackerade"
 DIRPATH = os.path.dirname(__file__)
-with open(os.path.join(os.path.dirname(__file__), "VERSION")) as _file:
+with open(os.path.join(PKG_NAME, "VERSION")) as _file:
     VERSION = _file.read().strip()
 
 # Deploy: python3 setup.py sdist bdist_wheel; twine upload --verbose dist/*
-setup(name='slackerade',
+setup(name=PKG_NAME,
     version=VERSION if not VERSION.endswith('dev') else '%s%s' % (
         VERSION, int(time.time())),
     description='Masquerade yourself as a fictitious user on slack',

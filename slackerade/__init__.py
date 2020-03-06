@@ -6,7 +6,7 @@ import json
 import os
 import requests
 
-with open(os.path.join(os.path.dirname(__file__), "..", "VERSION")) as _file:
+with open(os.path.join(os.path.dirname(__file__), "VERSION")) as _file:
     __VERSION__ = _file.read().strip()
 
 
