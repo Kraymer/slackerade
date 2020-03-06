@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright (c) 2020 Fabrice Laporte - kray.me
 # The MIT License http://www.opensource.org/licenses/mit-license.php
