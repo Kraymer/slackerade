@@ -5,16 +5,17 @@
 
 import os
 import time
-
 from setuptools import setup
 
-VERSION = '0.0.2-dev'
 DIRPATH = os.path.dirname(__file__)
+with open(os.path.join(os.path.dirname(__file__), "..", "VERSION")) as _file:
+    VERSION = _file.read().strip()
 
 # Deploy with
 # python3 setup.py sdist bdist_wheel; twine upload --verbose dist/*
 setup(name='slackerade',
-    version=VERSION if not VERSION.endswith('dev') else '%s%s' % (VERSION, int(time.time())),
+    version=VERSION if not VERSION.endswith('dev') else '%s%s' % (
+        VERSION, int(time.time())),
     description='Masquerade yourself as a fictitious user on slack',
     long_description=open(os.path.join(DIRPATH, 'README.rst')).read(),
     author='Fabrice Laporte',

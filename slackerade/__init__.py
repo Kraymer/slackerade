@@ -3,7 +3,12 @@
 
 import click
 import json
+import os
 import requests
+
+with open(os.path.join(os.path.dirname(__file__), "..", "VERSION")) as _file:
+    __VERSION__ = _file.read().strip()
+
 
 @click.command(
     context_settings=dict(help_option_names=["-h", "--help"]),
@@ -22,7 +27,7 @@ def slackerade_cli(channel, username, message, emoji):
     payload = {"urls": (channel, ),
         "username": username,
         "text": message,
-        "icon_emoji": emoji
+        "icon_emoji": emoji}
     requests.post(channel, {"payload": json.dumps(payload)}, verify=False)
 
 if __name__ == "__main__":
