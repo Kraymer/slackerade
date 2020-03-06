@@ -28,7 +28,7 @@ setup(name='slackerade',
           'console_scripts': [
               'slackerade = slackerade:slackerade_cli',
           ],
-      },
+    },
     install_requires=open(os.path.join(DIRPATH, 'requirements.txt')).read().split('\n'),
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -36,4 +36,5 @@ setup(name='slackerade',
         'Topic :: Communications :: Chat',
     ],
     keywords='Masquerade yourself as a fictitious user on slack',
+    python_requires='>=3.5.0',
     )
