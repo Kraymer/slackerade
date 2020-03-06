@@ -8,11 +8,10 @@ import time
 from setuptools import setup
 
 DIRPATH = os.path.dirname(__file__)
-with open(os.path.join(os.path.dirname(__file__), "..", "VERSION")) as _file:
+with open(os.path.join(os.path.dirname(__file__), "VERSION")) as _file:
     VERSION = _file.read().strip()
 
-# Deploy with
-# python3 setup.py sdist bdist_wheel; twine upload --verbose dist/*
+# Deploy: python3 setup.py sdist bdist_wheel; twine upload --verbose dist/*
 setup(name='slackerade',
     version=VERSION if not VERSION.endswith('dev') else '%s%s' % (
         VERSION, int(time.time())),
