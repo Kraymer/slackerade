@@ -32,6 +32,7 @@ setup(name=PKG_NAME,
               'slackerade = slackerade:slackerade_cli',
           ],
     },
+    include_package_data=True,
     install_requires=open(os.path.join(DIRPATH, 'requirements.txt')).read().split('\n'),
     classifiers=[
         'License :: OSI Approved :: MIT License',
