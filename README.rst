@@ -27,7 +27,7 @@ Example
 
 gives :
 
-.. figure:: https://github.com/Kraymer/public/raw/master/slackerade/slackerade_demo.png
+.. figure:: https://github.com/Kraymer/slackerade/raw/master/docs/slackerade_demo.png
    :alt:
 
 
